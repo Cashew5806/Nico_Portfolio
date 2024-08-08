@@ -41,6 +41,52 @@
         background-color: #1799cd;
         color: white;
       }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 99%;
+        margin: 0.5%;
+        padding: 12px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        font-family: "Gill Sans", sans-serif;
+      }
+
+      label {
+        font-family: "Gill Sans", sans-serif;
+
+        font-size: 150%;
+        margin-left: 0.5%;
+      }
+
+      input[type="submit"] {
+        background-color: #1799cd;
+        color: black;
+        font-family: "Gill Sans", sans-serif;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: gray;
+      }
+
+      input[type="email"] {
+        width: 40%;
+        margin: 0.5%;
+        padding: 12px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        font-family: "Gill Sans", sans-serif;
+      }
     </style>
     <div class="topnav">
       <a href="index.html">Home</a>
@@ -51,27 +97,37 @@
     </div>
     <div class="Info Box">
       <form action="">
+        <br />
         <label for="fname">First Name</label>
         <input
           type="text"
           id="fname"
           name="Firstname"
-          placeholder="First Name"
+          placeholder="First Name..."
         />
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="Lastname" placeholder="Last Name" />
+        <input
+          type="text"
+          id="lname"
+          name="Lastname"
+          placeholder="Last Name..."
+        />
 
         <label for="subject">Subject</label>
         <textarea
           id="subject"
           name="Subject"
-          placeholder="Subject"
+          placeholder="Subject..."
           style="height: 200px"
         ></textarea>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="Email" placeholder="Email" />
+        <br />
+        <input type="email" id="email" name="Email" placeholder="Email..." />
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
       </form>
     </div>
   </body>
